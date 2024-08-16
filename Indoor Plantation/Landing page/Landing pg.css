@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Alegreya, sans-serif;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-item a {
+  color: #201c11;
+  font-size: 1.1rem;
+}
+#nav-toggle {
+  border: none;
+}
+.nav-item a:hover {
+  color: #e1dad0;
+}
+#nav-toggle:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link:hover,
+.nav-link.active::before {
+  color: #e1dad0;
+}
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(6%);
+    width: 0;
+    height: 2px;
+    background-color: #e1dad0;
+    visibility: hidden;
+    transition: all ease-in-out 0.3s;
+    border-radius: 3px;
+  }
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 90%;
+    visibility: visible;
+  }
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-section .btn {
+  background-color: #5e883e;
+  width: 7rem;
+  color: #e1dad0;
+}
+#carousel2,
+#carousel1,
+#carousel3 {
+  height: 100vh;
+}
+#carouselExampleDark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  color: #50330c;
+  position: relative;
+}
+
+.carousel-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+#btn-page:hover {
+  background-color: #201c11;
+  color: #e1dad0;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 4px 4px 15px#201c11;
+}
+.carousel-caption {
+  opacity: 0;
+  transition: 2.5s;
+  transform: translateY(-200px);
+}
+.show {
+  opacity: 1;
+  transform: translateY(25px);
+}
+.hero-section2 {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#c4baac, #e1dad0);
+  position: absolute;
+}
+
+#Explore:hover {
+  color: #5e883e;
+}
+
+#Explore::after {
+  position: absolute;
+  content: "";
+  background-color: #5e883e;
+  width: 0%;
+  height: 2px;
+  transform: translateX(-80px);
+  top: 8rem;
+  transition: all ease-in-out 0.3s;
+}
+#Explore a .btn {
+  position: relative;
+  font-size: 1.5rem;
+}
+#Explore:hover::after {
+  width: 36%;
+  border-radius: 10px;
+  color: #5e883e;
+}
+#Explore .btn {
+  position: relative;
+  font-size: 1.2rem;
+}
+#Explore1::after {
+  position: absolute;
+  content: "";
+  background-color: #5e883e;
+  width: 0%;
+  height: 2px;
+  transform: translateX(-80px);
+  top: 8rem;
+  transition: all ease-in-out 0.3s;
+}
+#Explore1:hover::after {
+  width: 33%;
+  border-radius: 10px;
+  color: #5e883e;
+}
+
+#Explore1:hover {
+  color: #5e883e;
+}
+#Trending::before {
+  content: "";
+  position: absolute;
+  background: url(/green-leaf-green-leaves-free-png\ 1.png) no-repeat center;
+  background-size: cover;
+  height: 8rem;
+  width: 8rem;
+  top: 0;
+  z-index: 10;
+}
+.card {
+  margin: 5% 0%;
+}
+
+.card-body {
+  margin: 0% 0% 0% 3%;
+  padding: 6% 0%;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link:hover,
+.nav-link.active::before {
+  color: #e1dad0;
+}
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(6%);
+    width: 0;
+    height: 2px;
+    background-color: #e1dad0;
+    visibility: hidden;
+    transition: all ease-in-out 0.3s;
+    border-radius: 3px;
+  }
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 90%;
+    visibility: visible;
+  }
+}
+#category a:hover,
+#category.active::before {
+  color: #5e883e;
+}
+#category a {
+  color: #201c11;
+  text-decoration: none;
+  position: relative;
+  font-family: sans-serif;
+}
+
+@media (min-width: 991px) {
+  #category a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(1%);
+    width: 0;
+    height: 2px;
+    background-color: #5e883e;
+    visibility: hidden;
+    transition: all ease-in-out 0.3s;
+    border-radius: 3px;
+  }
+  #category a:hover::before,
+  #category a.active::before {
+    width: 90%;
+    visibility: visible;
+  }
+}
+.cart-icon :hover {
+  transform: scale(1.5);
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
